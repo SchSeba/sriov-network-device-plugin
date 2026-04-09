@@ -263,30 +263,6 @@ The project uses **glog** (`github.com/golang/glog`) for all logging. Use
 - Check and return errors; do not silently discard them.
 - Error type names should end with `Error` (enforced by `errname` linter).
 
-### License Headers
-
-Every `.go` file must include a license header. The project has two styles:
-
-**Intel-originated files** (most of the codebase):
-```go
-// Copyright 20XX Intel Corp. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// ...
-```
-
-**NVIDIA-contributed files** (primarily `pkg/devices/`):
-```go
-/*
- * SPDX-FileCopyrightText: Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES.
- * SPDX-License-Identifier: Apache-2.0
- * ...
- */
-```
-
-Both are Apache 2.0. When adding new files, use the Intel-style header unless
-contributing to an existing NVIDIA-originated package.
-
 ### Interface-Driven Design
 
 The codebase follows a strict **interface-driven** architecture. All core
