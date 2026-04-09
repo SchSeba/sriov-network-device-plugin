@@ -197,18 +197,6 @@ The project uses **glog** (`github.com/golang/glog`) for all logging. Use
 - Check and return errors; do not silently discard them.
 - Error type names should end with `Error` (enforced by `errname` linter).
 
-### License Header
-
-Every `.go` file must include the Apache 2.0 license header (Copyright Intel
-Corp.):
-
-```go
-// Copyright 20XX Intel Corp. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// ...
-```
-
 ### Interface-Driven Design
 
 The codebase follows a strict **interface-driven** architecture. All core
